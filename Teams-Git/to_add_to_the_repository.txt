@@ -1,0 +1,20 @@
+Так как редко пользуюсь GitHub и поэтому забываю алгоритм, то решил создать этот файл.
+Как добавлять новую запись в GitHub.
+-Создать новый репозиторий - нажать "New": https://github.com/Valera8?tab=repositories
+-Запустить Git Bash.
+-В этой программе перейти в директорию на жестком диске.
+ Команда: cd D:\GitHub/Class, где Class - это папка для файлов.
+-В GitHub скопировать ссылку на созданный репозиторий. Для этого нажать "Clone or download".
+-В Git Bash команда: git clone https://github.com/Valera8/rusClassDataBase.git, где https://github.com/Valera8/rusClassDataBase.git - это скопированная ссылка.
+-Если ввести команду: dir , то отобразится состав файлов, скопированных из GitHub на жесткий диск.
+-Ввести команду: cd D:/GitHub/Class/rusClassDataBase , где /Class/rusClassDataBase - папка где установлены файлы репозитория.
+-Ввести команду:  git status. Отобразится красным цветом " database_class.php", что требуется коммитить.
+-Ввести команду:  git add  database_class.php , где  database_class.php - что требуетя добавить в GitHub.
+-Ввести команду:  git status . И отобразится зеленым цветом "new file:   database_class.php". Это то, что требует отправки в репозиторий.
+-Сделать коммит (зафиксировать) их в Git, добавив сообщение об изменениях:
+ git commit -m "Класс для работы с базой данных Михаила Русакова"
+-После выполнения команды git status видно, что коммитить локальный репозиторий нечего.
+-Отправить в удаленный репозиторий:  git push origin master
+
+
+
